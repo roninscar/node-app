@@ -1,4 +1,4 @@
-require('newrelic');
+const newrelic = require('newrelic');
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
@@ -17,6 +17,7 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
   let city = req.body.city;
   let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
+newrelic.addCustomAttribute("City", city)
 
   request(url, function (err, response, body) {
     if(err){

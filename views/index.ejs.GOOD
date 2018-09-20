@@ -17,14 +17,6 @@ window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){va
         <form action="/" method="post">
           <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
           <input type="submit" class="ghost-button" value="Get Weather">
-          <input type="reset" class="ghost-button" value="Clear">
-<a href="https://codeburst.io/build-a-weather-website-in-30-minutes-with-node-js-express-openweather-a317f904897b" id="credit">How did I put this together?</a>
-<script>
-    document.getElementById('credit').addEventListener('click',function (e) {
-        newrelic.addPageAction('clickedCredit');
-    })
-</script>
-
         </form>
         <% if(weather !== null){ %>
           <p><%= weather %></p>

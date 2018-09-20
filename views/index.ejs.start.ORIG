@@ -12,9 +12,7 @@ CTYPE html>
         <form action="/" method="post">
           <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
           <input type="submit" class="ghost-button" value="Get Weather">
-          <input type="reset" class="ghost-button" value="Clear">
         </form>
-          <input type="submit" class="ghost-button" value="About this app">
       </fieldset>
     </div>
   </body>
